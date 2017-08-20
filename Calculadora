@@ -14,7 +14,7 @@
     <div class="page-title">Simple Calc</div>
     <!-- Display -->
     <div class="display">
-        <textarea class="read-only" readonly></textarea>
+        <textarea id ="read-only" class="read-only" readonly></textarea>
         <textarea id="input-only" class="input-only"></textarea>
     </div>
     <!-- Numbers -->
@@ -32,27 +32,27 @@
       <button onclick="inputs(3)" type="button" class="button-numbers 3" value="3">3</button>
 
       <button onclick="inputs(0)" type="button" class="button-numbers 0" value="0">0</button>
-      <button onclick="inputs(',')" type="button" class="button-numbers semicolon" value=",">,</button>
+      <button onclick="inputs('.')" type="button" class="button-numbers semicolon" value=".">.</button>
       <button onclick="inputs('%')" type="button" class="button-numbers percentage" value="%">%</button>
     </div>
     <!-- Operands -->
     <div class="operands">
-      <button type="button" onclick="functions()" class="button-operands division" value="division">/</button>
-      <button type="button" onclick="functions()" class="button-operands return" value="return">	Return</button>
-      <button type="button" onclick="functions()" class="button-operands erase" value="erase">&#9003;</button>
+      <button type="button" onclick="operands('/')" class="button-operands division" value="division">/</button>
+      <button type="button" onclick="operands('return')" class="button-operands return" value="return">	&#9003;</button>
+      <button type="button" onclick="operands('erase')" class="button-operands erase" value="erase"> DEL</button>
 
-      <button type="button" onclick="functions()" class="button-operands multiplication" value="multiplication">x</button>
-      <button type="button" onclick="functions()" class="button-operands open-parenthese" value="open-parenthese">(</button>
-      <button type="button" onclick="functions()" class="button-operands close-parenthese" value="close-parenthese">)</button>
+      <button type="button" onclick="operands('*')" class="button-operands multiplication" value="multiplication">x</button>
+      <button type="button" onclick="operands('(')" class="button-operands open-parenthese" value="open-parenthese">(</button>
+      <button type="button" onclick="operands(')')" class="button-operands close-parenthese" value="close-parenthese">)</button>
 
-      <button type="button" onclick="functions()" class="button-operands subtraction" value="subtraction">-</button>
-      <button type="button" onclick="functions()" class="button-operands squared-to-two" value="squared-to-two">	X&#178;</button>
-      <button type="button" onclick="functions()" class="button-operands root-square" value="root-squared">&#8730;</button>
+      <button type="button" onclick="operands('-')" class="button-operands subtraction" value="subtraction">-</button>
+      <button type="button" onclick="operands('2')" class="button-operands squared-to-two" value="squared-to-two">	X&#178;</button>
+      <button type="button" onclick="operands('root')" class="button-operands root-square" value="root-squared">&#8730;</button>
 
-      <button type="button" onclick="functions()" class="button-operands sum" value="sum">+</button>
-      <button type="button" onclick="functions()" class="button-operands result" value="result">=</button>
+      <button type="button" onclick="operands('+')" class="button-operands sum" value="sum">+</button>
+      <button type="button" onclick="operands('=')" class="button-operands result" value="result">=</button>
 
-      <button type="button" onclick="functions()" class="button-operands clear-empty" value="clear-empty">CE</button>
+      <button type="button" onclick="operands('CE')" class="button-operands clear-empty" value="clear-empty">CE</button>
     </div>
     <footer class="footer">
 
