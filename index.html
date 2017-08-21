@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" media="screen"/>
+  </head>
+  <body>
+  <div class="site">
+
+    <!-- Header -->
+    <div class="page-title">Simple Calculator</div>
+    <!-- Display -->
+    <div class="display">
+        <textarea id ="read-only" class="read-only" readonly></textarea>
+        <textarea id="input-only" class="input-only"></textarea>
+    </div>
+    <!-- Numbers -->
+    <div class="numbers">
+      <button onclick="appendKeyValuePressed(7)" type="button" class="button-numbers 7" value="7">7</button>
+      <button onclick="appendKeyValuePressed(8)" type="button" class="button-numbers 8" value="8">8</button>
+      <button onclick="appendKeyValuePressed(9)" type="button" class="button-numbers 9" value="9">9</button>
+
+      <button onclick="appendKeyValuePressed(4)" type="button" class="button-numbers 4" value="4">4</button>
+      <button onclick="appendKeyValuePressed(5)" type="button" class="button-numbers 5" value="5">5</button>
+      <button onclick="appendKeyValuePressed(6)" type="button" class="button-numbers 6" value="6">6</button>
+
+      <button onclick="appendKeyValuePressed(1)" type="button" class="button-numbers 1" value="1">1</button>
+      <button onclick="appendKeyValuePressed(2)" type="button" class="button-numbers 2" value="2">2</button>
+      <button onclick="appendKeyValuePressed(3)" type="button" class="button-numbers 3" value="3">3</button>
+
+      <button onclick="appendKeyValuePressed(0)" type="button" class="button-numbers 0" value="0">0</button>
+      <button onclick="appendKeyValuePressed('.')" type="button" class="button-numbers semicolon" value=".">.</button>
+      <button onclick="appendKeyValuePressed('%')" type="button" class="button-numbers percentage" value="%">%</button>
+    </div>
+    <!-- Operands -->
+    <div class="operand">
+      <button type="button" onclick="appendKeyValuePressed('/')" class="button-operands division" value="division">/</button>
+      <button type="button" onclick="specialButtons('return')" class="button-operands return" value="return">	&#9003;</button>
+      <button type="button" onclick="specialButtons('erase')" class="button-operands erase" value="erase"> DEL</button>
+
+      <button type="button" onclick="appendKeyValuePressed('*')" class="button-operands multiplication" value="multiplication">x</button>
+      <button type="button" onclick="appendKeyValuePressed('(')" class="button-operands open-parenthese" value="open-parenthese">(</button>
+      <button type="button" onclick="appendKeyValuePressed(')')" class="button-operands close-parenthese" value="close-parenthese">)</button>
+
+      <button type="button" onclick="appendKeyValuePressed('-')" class="button-operands subtraction" value="subtraction">-</button>
+      <button type="button" onclick="appendKeyValuePressed('²')" class="button-operands squared-to-two" value="squared-to-two">	X&#178;</button>
+      <button type="button" onclick="appendKeyValuePressed('√')" class="button-operands root-square" value="root-squared">&#8730;</button>
+
+      <button type="button" onclick="appendKeyValuePressed('+')" class="button-operands sum" value="sum">+</button>
+      <button type="button" onclick="specialButtons('=')" class="button-operands result" value="result">=</button>
+
+      <button type="button" onclick="specialButtons('CE')" class="button-operands clear-empty" value="clear-empty">CE</button>
+    </div>
+    <footer class="footer"> </footer>
+  </div>
+  <script type="text/javascript" src="functions.js"></script>
+  </body>
+</html>

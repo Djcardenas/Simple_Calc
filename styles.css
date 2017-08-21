@@ -46,7 +46,7 @@
 .button-numbers > .1, .2, .3 {grid-row: 3/4;}
 .button-numbers > .0, .semicolon .percentage {grid-row: 4/5;}
 
-.operands {
+.operand {
   grid-column: 2/3;
   grid-row: 3/4;
   display: grid;
